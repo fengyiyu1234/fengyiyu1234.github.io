@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fengyi Yu</title>
+<meta name="description" content="Fengyi Yu — PhD student at NC State University. Whole-brain light-sheet imaging and deep learning.">
+<style>
+  :root {
+    --bg: #fafaf8;
+    --text: #1f2328;
+    --muted: #5b6370;
+    --accent: #cc0000; /* NC State red */
+    --card: #ffffff;
+    --border: #e5e5e0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171a;
+      --text: #e8e8e6;
+      --muted: #9aa1ab;
+      --accent: #ff5c5c;
+      --card: #1d2024;
+      --border: #2c3036;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 20px 64px;
+  }
+  header { display: flex; gap: 20px; align-items: center; margin-bottom: 28px; }
+  header img {
+    width: 96px; height: 96px; border-radius: 50%;
+    object-fit: cover; border: 2px solid var(--border); flex-shrink: 0;
+  }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; line-height: 1.2; }
+  .role { color: var(--muted); margin: 0; font-size: 0.98rem; }
+  h2 {
+    font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--accent); margin: 36px 0 10px;
+  }
+  p { margin: 0 0 12px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+  .links a {
+    border: 1px solid var(--border); background: var(--card);
+    padding: 7px 14px; border-radius: 999px; font-size: 0.92rem; color: var(--text);
+  }
+  .links a:hover { border-color: var(--accent); text-decoration: none; }
+  .talk {
+    background: var(--card); border: 1px solid var(--border);
+    border-left: 4px solid var(--accent); border-radius: 8px; padding: 16px 18px;
+  }
+  .talk .title { font-weight: 600; margin-bottom: 4px; }
+  .talk .meta { color: var(--muted); font-size: 0.92rem; margin-bottom: 10px; }
+  .email { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.95rem; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.85rem; }
+  @media (max-width: 480px) {
+    header { flex-direction: column; align-items: flex-start; }
+    h1 { font-size: 1.55rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <!-- 照片：把照片文件（如 photo.jpg）上传到同一个仓库；不想放照片就删掉下面这一行 -->
+    <img src="photo.jpg" alt="Photo of Fengyi Yu">
+    <div>
+      <h1>Fengyi Yu</h1>
+      <p class="role">PhD Student, Comparative Biomedical Sciences<br>NC State University · Greenbaum Lab</p>
+    </div>
+  </header>
+
+  <h2>About</h2>
+  <p>
+    I build whole-brain light-sheet fluorescence microscopy and deep learning pipelines
+    to study neurodevelopment. My current work maps gliogenesis at single-cell resolution
+    in the postnatal mouse brain, combining tissue clearing, immunolabeling, and
+    deep learning-based cell detection.
+  </p>
+
+  <h2>Contact</h2>
+  <p class="email"> fyu7@ncsu.edu </p>
+  <div class="links">
+    <a href="https://github.com/fengyiyu1234">GitHub</a>
+    <a href="https://scholar.google.com/citations?user=Mt1DfC8AAAAJ&hl=en">Google Scholar</a>
+    <a href="https://orcid.org/my-orcid?orcid=0000-0001-7981-4274">ORCID</a>
+    <a href="https://www.linkedin.com/in/fengyi-yu-384968254/">LinkedIn</a>
+  </div>
+
+  <footer>Last updated: [Month Year]</footer>
+
+</main>
+</body>
+</html>
